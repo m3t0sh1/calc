@@ -6,7 +6,7 @@ pipeline {
      stages {
           stage("Unit test") {
                steps {
-                    sh "./gradlew test"
+                    sh "python ./test_calculator.py"
                }
           }
     }
